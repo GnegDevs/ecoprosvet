@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Лого_главное.svg" type="x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/loaders/STLLoader.js"></script>
+    <title>Экопросвещение</title>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2">
+            <a class="image-button" href="https://green-code-moscow.ru/">
+                <img src="Лого_главное_синее.png" alt="Button Image">
+            </a>
+            <a class="image-button" href="choice.html">
+                <img src="Иконка_ЛК.png" alt="Button Image">
+            </a>
+        </div>
+    </div>
+
+    <div class="box3">
+        <a class="button1" style="background-color: #006666;">
+            <img src="AR.png" alt="">
+            <p>AR</p>
+        </a>
+        <button class="button1" onclick="smoothScroll('box5')">
+            <img src="Карта.png" alt="">
+            <p>Карта событий</p>
+        </button>
+        <button class="button1" onclick="smoothScroll('box6')">
+            <img src="Мусор.png" alt="">
+            <p>Карта мусорок</p>
+        </button>
+    </div>
+
+    <div class="box4">
+        <h1>Ходи на эко-мероприятия и <br> собирай свою коллекцию няффек</h1>
+        <div class="carousel">
+            <div class="carousel-slide active">
+                <div class="carousel-content">
+                    <img src="Мышь.gif" alt="GIF 1">
+                    <div class="carousel-content-text">
+                        <h2>Хомямышь</h2>
+                        <p>Крайне дружелюбное существо - в любой компании сойдет за своего</p>
+                        <p>Любит уют и хорошо покушать</p>
+                        <p>Бодрствует ночью и спит днем - настоящий любитель покоя и умиротворения </p>
+                        <div style="background-color: #6C103F;" class="carousel-content-rare">
+                            <p>Легендарный</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="carousel-content">
+                    <img src="Геккон.gif" alt="GIF 2">
+                    <div style="margin-left: 50px;" class="carousel-content-text">
+                        <h2>Змееныш</h2>
+                        <p>Чешуйчатый и вертлявый снаружи, <br> но мягкий и добрый внутри</p>
+                        <p>Совсем не опасный</p>
+                        <p>Не укусит в отличие от <br> своих сородичей ужа и гадюки</p>
+                        <div class="carousel-content-rare">
+                            <p>Редкий</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="carousel-content">
+                    <img src="Воробей.gif" alt="GIF 3">
+                    <div class="carousel-content-text">
+                        <h2>Воробушек</h2>
+                        <p>Неприметный, но никогда <br> не оставит тебя в трудные времена</p>
+                        <p>Любитель семечек и больших и дружных компаний</p>
+                        <p>Напевает, когда находится в хорошем настроении</p>
+                        <div class="carousel-content-rare" style="background-color: #56682B;">
+                            <p>Обычный</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="carousel-controls">
+                <img src="Стрелочка_влево.png" class="prev" alt="Previous">
+                <img src="Стрелочка_вправо.png" class="next" alt="Next">
+            </div>
+        </div>
+    </div>
+
+    <div class="box5">
+        <div class="box51">
+            <h1 id="box5">Ближайшие <br> мероприятия</h1>
+            <div class="box510" style="margin-top: 0">
+                <img style="height: 100px; width: auto;" src="Точка_фиол.png" alt="">
+                <div class="box511">
+                    <h2>30 сентября 2024</h2>
+                    <p>Субботник в парке <br>Покровское-Стрешнево</p>
+                </div>
+            </div>
+            <div class="box510">
+                <img style="height: 100px; width: auto;" src="Точка_зел.png" alt="">
+                <div class="box511">
+                    <h2>6 октября 2024</h2>
+                    <p>Уборка листьев в <br> парке Фили</p>
+                </div>
+            </div>
+            <div class="box510">
+                <img style="height: 100px; width: auto;" src="Точка_корич.png" alt="">
+                <div class="box511">
+                    <h2>15 октября 2024</h2>
+                    <p>Эко-мастер-классы в <br>Битцевском лесу</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="box52">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A145f103b3f3809f1e01093a307ddc1d239d9d00a96b418c013ab81964fd3a778&amp;source=constructor" style="margin-top: 275px;" width="600" height="600" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <div class="box6">
+        <h1 id="box6" style="margin-top: 100px;">Карта пунктов <br> раздельного сбора мусора</h1>
+        <iframe src="https://recyclemap.ru" allowfullscreen="true" style="position:relative;"></iframe>
+    </div>
+
+    <div class="box7">
+        <a href="http://localhost/index.php">
+            <h1 style="text-align: left; font-size: 80px;">Экопроекты</h1>
+        </a>
+        <p>В подмосковном наукограде готовятся вырубать вековые сосны. Мэр говорит, что леса там нет. Ученые выступают защитниками природы</p>
+        <p>Крылатские холмы застраивают! Краснокнижные животные вымирают!</p>
+        <p>Арктика оттает вместе со скотомогильниками, а юг будет гореть. Чудовищные последствия для России, которые несет глобальное потепление</p>
+    </div>
+
+    <div class="box8">
+        <div class="box81">
+            <h3>Хахон</h3>
+            <p>Семен Сиромаха</p>
+            <p>Евгения Точенова</p>
+            <p>Максим Конов</p>
+            <p>Иван Вальтуилье</p>
+            <p>Кирилл Цуканов</p>
+        </div>
+    </div>
+
+    <script>
+        function smoothScroll(targetId) {
+            var targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                // Используйте метод scrollIntoView для плавного скролла
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+</body>
+</html>
