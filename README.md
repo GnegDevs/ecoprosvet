@@ -1,6 +1,6 @@
 # Ecoprosvet  
-Ecoprosvet - eco-projects informing recource  
+Ecoprosvet - eco-projects informing resource
 
 # Components  
 EcoprosvetCore (ecoCore) - All-in-one backend processor  (Java (Spring Framework))  
-EcoprosvetLuz (ecoLuz) - Frontend and connector layer (PHP, JavaScript)
+EcoprosvetLuz (ecoLuz) - Frontend and connection layer (PHP, JavaScript)
